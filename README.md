@@ -1,4 +1,3 @@
-openfurry.github.io
-===================
+# Openfurry.org Site
 
-The OpenFurry Contribution page.
+The webpage for the openfurry.org site
