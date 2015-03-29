@@ -25,4 +25,5 @@ on open source software within or for the furry community.
 ## Who
 
 * Owner: _Makyo_ -- Madison Scott-Clary
-* Contributors: [GitHub](https://github.com/orgs/OpenFurry/teams/contributors)
+* Contributors (public memberships only):
+  [GitHub](https://github.com/orgs/OpenFurry/teams/contributors)
