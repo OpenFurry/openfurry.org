@@ -24,19 +24,5 @@ on open source software within or for the furry community.
 
 ## Who
 
-* Owner: _Makyo_ -- Matthew Scott
-    * _Affiliations:_ 
-	* [Canonical](https://launchpad.net/~makyo) - Working on Juju and the
-	  various Juju UI projects
-        * [\[adjective\]\[species\]](http://adjectivespecies.com/authors/makyo) 
-    * _Code:_
-        * [Github](http://github.com/makyo)
-        * [Launchpad](https://launchpad.net/~makyo)
-    * _Languages:_
-        * JavaScript - D3/Protovis, YUI/jQuery, Backbone
-        * Python - Django, Flask
-        * Groovy - Grails
-	* Go - Martini
-        * Java - Hibernate
-        * SQL - Postgres, SQLite3, MySQL
+* Owner: _Makyo_ -- Madison Scott-Clary
 * Contributors: [GitHub](https://github.com/orgs/OpenFurry/teams/contributors)
