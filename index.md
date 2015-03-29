@@ -24,7 +24,7 @@ on open source software within or for the furry community.
 
 ## Who
 
-* _Makyo_ -- Matthew Scott
+* Owner: _Makyo_ -- Matthew Scott
     * _Affiliations:_ 
 	* [Canonical](https://launchpad.net/~makyo) - Working on Juju and the
 	  various Juju UI projects
@@ -39,3 +39,4 @@ on open source software within or for the furry community.
 	* Go - Martini
         * Java - Hibernate
         * SQL - Postgres, SQLite3, MySQL
+* Contributors: [GitHub](https://github.com/orgs/OpenFurry/teams/contributors)
