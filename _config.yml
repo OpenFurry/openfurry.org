@@ -1,3 +1,2 @@
 name: OpenFurry
-markdown: redcarpet
-pygments: true
+markdown: kramdown
