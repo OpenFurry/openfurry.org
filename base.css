@@ -16,6 +16,10 @@ header {
     border-bottom: 1px dotted #aaa;
 }
 
+header img {
+    height: 24px;
+}
+
 footer {
     border-top: 1px dotted #aaa;
     text-align: right;
