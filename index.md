@@ -15,7 +15,7 @@ on open source software within or for the furry community.
 
 ## What
 
-* OpenFurry OpenID Server (coming soon) -
+* OpenFurry OpenID Server (coming ~~soon~~ sometime) -
   [Github](https://github.com/OpenFurry/openfurry-site)
 * [Characters](http://characters.openfurry.org) -
   [Github](https://github.com/OpenFurry/charref)
