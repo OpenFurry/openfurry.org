@@ -21,6 +21,8 @@ on open source software within or for the furry community.
   [Github](https://github.com/OpenFurry/charref)
 * [Ideawheel](http://ideas.jnsq.us) -
   [Github](https://github.com/OpenFurry/ideawheel)
+* [Honeycomb](https://alopex.honeycomb.cafe) -
+  [Github](https://github.com/OpenFurry/honeycomb)
 
 ## Who
 
