@@ -1,0 +1,28 @@
+graph OpenFurryDeployment {
+    Apache -- velruse;
+    velruse -- Postgres;
+
+    velruse -- Honeycomb;
+    velruse -- Characters;
+    velruse -- IdeaWheel;
+
+    { rank=same
+        velruse; Gunicorn [shape=box];
+    }
+
+    Apache -- Honeycomb;
+    Apache -- Characters;
+    Apache -- "Characters-legacy";
+    Apache -- IdeaWheel;
+    Honeycomb -- Gunicorn;
+    Characters -- Gunicorn;
+    IdeaWheel -- Gunicorn;
+    Honeycomb -- Memcached;
+    Honeycomb -- Postgres;
+    Honeycomb -- ElasticSearch;
+
+    Characters -- Postgres;
+    "Characters-legacy" -- Postgres;
+
+    IdeaWheel -- Postgres;
+}

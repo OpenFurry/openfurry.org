@@ -24,6 +24,12 @@ on open source software within or for the furry community.
 * [Honeycomb](https://alopex.honeycomb.cafe) -
   [Github](https://github.com/OpenFurry/honeycomb)
 
+## How
+
+Pie-in-the-sky dream diagram.
+
+[![Deployment diagram](deployment.png)](deployment.dot)
+
 ## Who
 
 * Owner: _Makyo_ -- Madison Scott-Clary
