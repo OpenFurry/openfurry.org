@@ -28,7 +28,7 @@ on open source software within or for the furry community.
 
 Pie-in-the-sky dream diagram.
 
-[![Deployment diagram](deployment.png)](deployment.dot)
+{% include deployment.svg %}
 
 ## Who
 

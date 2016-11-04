@@ -8,6 +8,10 @@ body {
     margin: 0 auto;
 }
 
+#wrapper svg {
+    max-width: 100%;
+}
+
 header, footer {
     width: 100%;
 }

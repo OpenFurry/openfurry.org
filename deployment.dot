@@ -1,22 +1,49 @@
 graph OpenFurryDeployment {
+	node [fontname="Marcellus"]
+    Apache [URL="https://jujucharms.com/apache2/"];
+    velruse [URL="http://velruse.readthedocs.io/en/latest/index.html"];
+    Postgres [URL="https://jujucharms.com/postgresql/"];
+    Kibana [URL="https://jujucharms.com/kibana/"];
+    Logstash [URL="https://jujucharms.com/logstash/"];
+    Honeycomb [URL="https://github.com/OpenFurry/honeycomb"];
+    Characters [URL="https://github.com/OpenFurry/charref"];
+    "Characters-legacy" [URL="https://characters.openfurry.org"];
+    IdeaWheel [URL="https://github.com/OpenFurry/ideawheel"];
+    Gunicorn [URL="https://jujucharms.com/gunicorn/s"];
+    ElasticSearch [URL="https://jujucharms.com/elasticsearch/"];
+    Memcached [URL="https://jujucharms.com/memcached/"];
+
     Apache -- velruse;
     velruse -- Postgres;
+
+    Apache -- Kibana;
+    Kibana -- Logstash;
+
+    Apache -- Logstash;
+    velruse -- Logstash;
 
     velruse -- Honeycomb;
     velruse -- Characters;
     velruse -- IdeaWheel;
 
-    { rank=same
-        velruse; Gunicorn [shape=box];
-    }
+    Gunicorn [shape=box];
 
     Apache -- Honeycomb;
     Apache -- Characters;
     Apache -- "Characters-legacy";
     Apache -- IdeaWheel;
+
     Honeycomb -- Gunicorn;
     Characters -- Gunicorn;
     IdeaWheel -- Gunicorn;
+
+    Honeycomb -- Logstash;
+    Characters -- Logstash;
+    IdeaWheel -- Logstash;
+    Memcached -- Logstash;
+    Postgres -- Logstash;
+    ElasticSearch -- Logstash;
+
     Honeycomb -- Memcached;
     Honeycomb -- Postgres;
     Honeycomb -- ElasticSearch;
