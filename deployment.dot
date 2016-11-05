@@ -1,7 +1,7 @@
 graph OpenFurryDeployment {
 	node [fontname="Marcellus"]
     Apache [URL="https://jujucharms.com/apache2/"];
-    velruse [URL="http://velruse.readthedocs.io/en/latest/index.html"];
+    Masq [URL="https://github.com/dennisreimann/masq"];
     Postgres [URL="https://jujucharms.com/postgresql/"];
     Kibana [URL="https://jujucharms.com/kibana/"];
     Logstash [URL="https://jujucharms.com/logstash/"];
@@ -13,18 +13,18 @@ graph OpenFurryDeployment {
     ElasticSearch [URL="https://jujucharms.com/elasticsearch/"];
     Memcached [URL="https://jujucharms.com/memcached/"];
 
-    Apache -- velruse;
-    velruse -- Postgres;
+    Apache -- Masq;
+    Masq -- Postgres;
 
     Apache -- Kibana;
     Kibana -- Logstash;
 
     Apache -- Logstash;
-    velruse -- Logstash;
+    Masq -- Logstash;
 
-    velruse -- Honeycomb;
-    velruse -- Characters;
-    velruse -- IdeaWheel;
+    Masq -- Honeycomb;
+    Masq -- Characters;
+    Masq -- IdeaWheel;
 
     Gunicorn [shape=box];
 
