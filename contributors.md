@@ -5,6 +5,8 @@ title: Contributors
 
 OpenFurry is a loose collective of critters interested in making neat software.  Though many may [contribute](https://Github.com/orgs/OpenFurry/teams/contributors), here are some of the folks involved.
 
+Contributors are bound by OpenFurry's adaptation of [the contributor covenant code of conduct](/code-of-conduct).
+
 ## Primary
 
 * **Makyo - Madison Scott-Clary** ![Art by Rory Frances](/assets/headshots/makyo.png){: style="width: 150px; float: right;" }

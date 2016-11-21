@@ -48,6 +48,20 @@ footer {
     margin: 0px;
 }
 
+.post-list-item {
+    margin-bottom: 1em;
+}
+.post-list-item h3 {
+    border-bottom: 1px dotted #333;
+}
+.post-list-item h3 small {
+    font-size: small;
+    color: #666;
+}
+.post-list-item .post-excerpt {
+    margin: 0 1em;
+}
+
 a {
     color: #696;
 }
@@ -62,6 +76,15 @@ dd ul {
     margin: 0 auto;
 }
 
+.clearfix:after,
+.clearfix.before:before {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
 @media (min-width: 992px) {
     #wrapper {
         width: 960px;
@@ -72,5 +95,24 @@ dd ul {
     header ul li {
         display: inline-block;
         font-size: 14pt;
+    }
+    .project-details {
+        padding-left: 1em;
+        margin: 0 0 0.5em 0.5em;
+        width: 35%;
+        float: right;
+        -webkit-box-shadow: -2px 2px 2px 0px rgba(238,238,238,1);
+        -moz-box-shadow: -2px 2px 2px 0px rgba(238,238,238,1);
+        box-shadow: -2px 2px 2px 0px rgba(238,238,238,1);
+    }
+    .project-details h2 {
+        margin-top: 0;
+    }
+    .post-list {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .post-list-item .post-excerpt {
+        margin: 0 1em;
     }
 }

@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+<div class="project-details">
+    <h2>Details</h2>
+    <dl>
+        <dt>Known instances</dt>
+        <dd>
+            {% if page.project.instances %}
+            <ul>
+                {% for instance in page.project.instances %}
+                <li><a href="{{ instance.url }}">{{ instance.name }}</a></li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <em>No instances</em>
+            {% endif %}
+        </dd>
+        <dt>Source</dt>
+        <dd>
+            <a href="{{ page.project.source.url }}">{{ page.project.source.name }}</a>
+        </dd>
+        <dt>About</dt>
+        <dd>
+            <dl>
+                <dt>Language</dt>
+                <dd>{{ page.project.about.language }}</dd>
+                <dt>Project type</dt>
+                <dd>{{ page.project.about.type }}</dd>
+            </dl>
+        </dd>
+        <dt>Ownership</dt>
+        <dd>
+            <a href="{{ page.project.owner.url }}">{{ page.project.owner.name }}</a>
+        </dd>
+        <dt>License</dt>
+        <dd>{{ page.project.license }}</dd>
+        <dt>Status</dt>
+        <dd>
+            {{ page.project.status.short }} - {{ page.project.status.long }}
+        </dd>
+    </dl>
+</div>
+
+<h2>Description</h2>
+
+{{ content }}
+
+<div class="clearfix before post-list">
+    <h2>Posts</h2>
+    {% for post in site.posts %}
+        {% capture category_url %}/{{ post.categories|join:'/' }}/{% endcapture %}
+        {% if page.dir == category_url %}
+            <div class="post-list-item">
+                <h3><a href="{{ post.url }}">{{ post.title }}</a> <small>Posted on {{ post.date|date_to_string }}</small></h3>
+                <div class="post-excerpt">
+                    {{ post.excerpt }}
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
