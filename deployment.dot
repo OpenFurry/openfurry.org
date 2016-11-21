@@ -1,7 +1,7 @@
 graph OpenFurryDeployment {
 	node [fontname="Marcellus"]
     Apache [URL="https://jujucharms.com/apache2/"];
-    Masq [URL="https://github.com/dennisreimann/masq"];
+    OFAuth [URL="https://github.com/OpenFurry/OFAuth"];
     Postgres [URL="https://jujucharms.com/postgresql/"];
     Kibana [URL="https://jujucharms.com/kibana/"];
     Logstash [URL="https://jujucharms.com/logstash/"];
@@ -9,22 +9,22 @@ graph OpenFurryDeployment {
     Characters [URL="https://github.com/OpenFurry/charref"];
     "Characters-legacy" [URL="https://characters.openfurry.org"];
     IdeaWheel [URL="https://github.com/OpenFurry/ideawheel"];
-    Gunicorn [URL="https://jujucharms.com/gunicorn/s"];
+    Gunicorn [URL="https://jujucharms.com/gunicorn/"];
     ElasticSearch [URL="https://jujucharms.com/elasticsearch/"];
     Memcached [URL="https://jujucharms.com/memcached/"];
 
-    Apache -- Masq;
-    Masq -- Postgres;
+    Apache -- OFAuth;
+    OFAuth -- Postgres;
 
     Apache -- Kibana;
     Kibana -- Logstash;
 
     Apache -- Logstash;
-    Masq -- Logstash;
+    OFAuth -- Logstash;
 
-    Masq -- Honeycomb;
-    Masq -- Characters;
-    Masq -- IdeaWheel;
+    OFAuth -- Honeycomb;
+    OFAuth -- Characters;
+    OFAuth -- IdeaWheel;
 
     Gunicorn [shape=box];
 
