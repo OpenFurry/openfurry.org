@@ -51,8 +51,9 @@ footer {
 .post-list-item {
     margin-bottom: 1em;
 }
-.post-list-item h3 {
-    border-bottom: 1px dotted #333;
+.post-list-item h3,
+.post-view .post-header {
+    border-bottom: 1px dotted #666;
 }
 .post-list-item h3 small {
     font-size: small;
@@ -89,13 +90,32 @@ dd ul {
     #wrapper {
         width: 960px;
     }
+
     header img {
         height: 24px;
     }
+
     header ul li {
         display: inline-block;
         font-size: 14pt;
     }
+
+    .project-list {
+        list-style-type: none;
+    }
+
+    .project-list li {
+        display: inline-block;
+        width: 45%;
+        height: 10em;
+        overflow: scroll;
+        padding: 0.5em;
+        margin: 0.5em;
+        -webkit-box-shadow: -2px 2px 2px 1px rgba(238,238,238,1);
+        -moz-box-shadow: -2px 2px 2px 1px rgba(238,238,238,1);
+        box-shadow: -2px 2px 2px 1px rgba(238,238,238,1);
+    }
+
     .project-details {
         padding-left: 1em;
         margin: 0 0 0.5em 0.5em;
@@ -105,14 +125,34 @@ dd ul {
         -moz-box-shadow: -2px 2px 2px 0px rgba(238,238,238,1);
         box-shadow: -2px 2px 2px 0px rgba(238,238,238,1);
     }
+
     .project-details h2 {
         margin-top: 0;
     }
+
     .post-list {
         width: 80%;
         margin: 0 auto;
     }
+
     .post-list-item .post-excerpt {
         margin: 0 1em;
+    }
+
+    .post-view {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .post-view .post-header h2 {
+        margin-bottom: 0px;
+    }
+
+    .post-view pre {
+        -webkit-box-shadow: -2px 0 2px 1px rgba(238,238,238,1);
+        -moz-box-shadow: -2px 0 2px 1px rgba(238,238,238,1);
+        box-shadow: -2px 0 2px 1px rgba(238,238,238,1);
+        padding: 0.5em;
+        margin: 0.5em;
     }
 }

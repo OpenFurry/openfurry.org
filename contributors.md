@@ -9,7 +9,7 @@ Contributors are bound by OpenFurry's adaptation of [the contributor covenant co
 
 ## Primary
 
-* **Makyo - Madison Scott-Clary** ![Art by Rory Frances](/assets/headshots/makyo.png){: style="width: 150px; float: right;" }
+* **Makyo - Madison Scott-Clary**{: id="Makyo" } ![Art by Rory Frances](/assets/headshots/makyo.png){: style="width: 150px; float: right;" }
 
   Makyo is totally and completely obsessed with, inundated by, and buried underneath furry.  She's an arctic fox 80% of the time, a snow leopard 15% of the time, an Ethiopian wolf 3% of the time, and the other 2% she's a human working on [Juju](https://jujucharms.com) at [Canonical](https://canonical.com).
 

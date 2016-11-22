@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<div class="post-view">
+    <div class="post-header">
+        <h2>{{ page.title }}</h2>
+        <small>Posted by <a href="/contributors#{{ page.author }}">{{ page.author }}</a> on {{ page.date|date_to_string }} in <a href="/{{ page.categories|join:'/' }}">/{{ page.categories|join:'/'}}</a></small>
+    </div>
+
+    {{ page.content }}
+</div>
