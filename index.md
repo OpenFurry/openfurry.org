@@ -18,7 +18,7 @@ OpenFurry is a community resource for open-source furry and furry-adjacent softw
     <h2>Recent updates</h2>
     {% for post in site.posts limit:5 %}
         <div class="post-list-item">
-            <h3><a href="{{ post.url }}">{{ post.title }}</a> <small>Posted on {{ post.date|date_to_string }}</small></h3>
+            <h3><a href="{{ post.url }}">{{ post.title }}</a> <small>Posted on {{ post.date|date_to_string }} by <a href="/contributors#{{ post.author }}">{{ post.author }}</a></small></h3>
             <div class="post-excerpt">
                 {{ post.excerpt }}
             </div>
