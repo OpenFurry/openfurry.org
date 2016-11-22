@@ -15,11 +15,16 @@ body {
 }
 
 header {
+    position: relative;
     border-bottom: 1px dotted #333;
 }
 
 header img {
     height: 50px;
+}
+
+header input {
+    display: none;
 }
 
 header ul {
@@ -51,16 +56,30 @@ footer {
 .post-list-item {
     margin-bottom: 1em;
 }
+
 .post-list-item h3,
 .post-view .post-header {
     border-bottom: 1px dotted #666;
 }
+
 .post-list-item h3 small {
     font-size: small;
     color: #666;
 }
+
 .post-list-item .post-excerpt {
     margin: 0 1em;
+}
+
+.post-view pre {
+    white-space: pre-wrap;
+    border-top: 1px dotted #666;
+    border-bottom: 1px dotted #666;
+    padding: 0.5em;
+}
+
+.project-list {
+    list-style-type: none;
 }
 
 a {
@@ -86,6 +105,12 @@ dd ul {
    clear: both;
 }
 
+@media (min-width: 500px) {
+    header ul li {
+        display: inline-block;
+    }
+}
+
 @media (min-width: 992px) {
     #wrapper {
         width: 960px;
@@ -96,12 +121,7 @@ dd ul {
     }
 
     header ul li {
-        display: inline-block;
         font-size: 14pt;
-    }
-
-    .project-list {
-        list-style-type: none;
     }
 
     .project-list li {
@@ -152,7 +172,8 @@ dd ul {
         -webkit-box-shadow: -2px 0 2px 1px rgba(238,238,238,1);
         -moz-box-shadow: -2px 0 2px 1px rgba(238,238,238,1);
         box-shadow: -2px 0 2px 1px rgba(238,238,238,1);
-        padding: 0.5em;
         margin: 0.5em;
+        white-space: pre;
+        border: none;
     }
 }
