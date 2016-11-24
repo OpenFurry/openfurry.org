@@ -2,6 +2,10 @@
 layout: project
 title: Submitify
 project:
+    instances:
+        -
+            url: https://submit.drab-makyo.com
+            name: submit.drab-makyo.com
     source:
         url: https://github.com/OpenFurry/submitify
         name: Github
